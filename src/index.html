@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/src/public/css/style.css">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+
+            <!-- Navigation -->
+            <nav class="nav-main">
+                <!-- Brand -->
+                <img src="img/riobeta_logo.png" alt="Riobeta Logo" class="nav-brand">
+
+                <!-- LEFT NAV -->
+                <ul class="nav-menu-primary">
+                    <li class="inicio"><a href="#">Inicio</a>
+                        <ul class="nav-menu-secondary">
+                            <li class="dashboard"><a href="#">Dashborad</a></li>
+                            <li class="calendario"><a href="#">Calendario</a></li>
+                            <li class="estadisticas"><a href="#">Estadísticas</a></li>    
+                        </ul>
+
+
+                    </li>
+
+                    <li class="pedidos"><a href="#">Pedidos</a>
+                        <ul class="nav-menu-secondary">
+                            <li class="nuevoPedido"><a href="#">Nuevo pedido</a>
+                            <li class="lista-pedidos"><a href="#">Lista de pedidos</a>
+                                <ul class="nav-menu-tertiary">
+                                    <li class="detalles-pedido"><a href="#">Detalles del pedido</a></li>
+                                    <li class="acciones-pedido"><a href="#">Acciones del pedido</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                
+                    <li class="productos"><a href="#">Productos</a>
+                        <ul class="nav-menu-secondary">
+                            <li class="nueva-categoria"><a href="#">Nueva categoría</a></li>
+                            <li class="catalogo-productos"><a href="#"> Catalogo de productos</a>
+                                <ul class="nav-menu-tertiary">
+                                    <li class="detalles-producto"><a href="#">Detalles del producto</a></li>
+                                    <li class="acciones-producto"><a href="#">Acciones del producto (editar-eliminar)</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="clientes"><a href="#">Clientes</a>
+                        <ul class="nav-menu-secondary">
+                            <li class="nuevo-cliente"><a href="#">Nuevo cliente</a></li>
+
+                            <li class="lista-clientes"><a href="#">Lista de clientes</a>
+                                <ul class="nav-menu-tertiary">
+                                    <li class="detalles-cliente"><a href="#">Detalles del cliente</a></li>
+                                    <li class="historial-pedidosCliente"><a href="#">Historial de pedidos del cliente</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="inventario"><a href="#">Inventario</a>
+                        <ul class="nav-menu-secondary">
+                            <li class="ajuste-existencias"><a href="#">Ajuste de existencias</a></li>
+                            <li class="registro-existencias"><a href="#">Registro de existencias</a>
+                                <ul class="nav-menu-tertiary">
+                                    <li class="detalles-existencia"><a href="#">Detalles de existencia</a></li>
+                                    <li class="movimiento-inventario"><a href="#">Movimiento de inventario</a></li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li class="configuración"><a href="#">Configuración</a>
+                        <ul class="nav-menu-secondary">
+                            <li class="usuariosYPermisos"><a href="#">Usuarios y permisos</a></li>
+                            <li class="preferenciasSistema"><a href="#">Preferencias del sistema</a></li>
+                        </ul>
+
+                    </li>
+                    
+
+                </ul>
+                <!-- Login/register section -->
+                <ul class="login">
+                    <li class="crear-cuenta">
+                        <a href="/register.html" >Crea tu cuenta</a>
+                    </li>
+        
+                    <li class="ingresar">
+                        <a href="/signin.html" >
+                            Ingresa
+                        </a>
+                    </li>
+   
+                </ul>
+
+
+                <!-- RIGHT NAV -->
+                <ul class="nav-menu-right">
+                    <li class="search-input">
+                        <input id="buscar-productos" type="text" placeholder="Buscar productos...">
+                    </li>
+                    
+
+                    <li class="icon-search">
+                        <a href="#" id="icon-search">
+                            <i class="fas fa-search"></i>
+                        </a>
+            
+                    </li>
+
+
+                </ul>
+
+
+                <!--RIGHT NAV MOBILE  -->
+
+                <ul class="icon-search mobile">
+
+                    <li class="icon-user">
+                        <a href="signin.html">
+                            <i class="fa fa-user"></i>
+                        </a>
+            
+                    </li>
+               
+                    <li class="icon-search mobile">
+                        <a href="#" id="icon-search">
+                            <i class="fas fa-search"></i>
+                        </a>
+            
+                    </li>
+                    <li class="menu-btn">
+                        <a >
+                            <i class="fas fa-bars fa-2x"></i>
+                        </a>
+                    </li>
+ 
+
+
+                </ul>
+            </nav>
+
+            <nav class="navigation-search-input mobile">
+                
+                <ul class="search-input mobile">
+                    <li class="search-input mobile ">
+                        <input id="buscar-productos" type="text" placeholder="Buscar productos...">
+                    </li>
+                </ul>
+            </nav>
+
+            
+            
+            
+            <hr>
+
+        
+            <!--header carrusel  -->
+            <header class="header-carrusel">
+                <div class="carrusel-container">
+                    <h2 id="titulos">Disfrute con Riobeta Diseños</h2>
+                    <div class="carrusel-list" id="carrusel-list">
+                        <button class="carrusel-arrow carrusel-prev" id="button-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carrusel-track" id="carrusel-track">
+                            <div class="carrusel-item"><img src="img/wallpaper_carrusel_riobeta.jpg" alt="Imagen 1"></div>
+                            <div class="carrusel-item"><img src="img/wallpaper_carrusel_riobeta2.jpg" alt="Imagen 2"></div>
+                            <div class="carrusel-item"><img src="img/wallpaper_carrusel_riobeta3.jpg" alt="Imagen 3"></div>
+                            <div class="carrusel-item"><img src="img/wallpaper_carrusel_riobeta4.jpg" alt="Imagen 4"></div>
+                        </div>
+                        <button class="carrusel-arrow carrusel-next" id="button-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carrusel-indicators" id="carrusel-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+
+                    </div>
+                </div>
+            </header>
+
+            <section class="nuestra-experiencia">
+                <h2 id="titulos">Sobre nuestra experiencia</h2>
+                <p>En Riobeta Diseños no sólo encontrará lo que necesita, sino también la mejor calidad y al mejor precio. años de experiencia en la industria nos dan una especialización para vender productos con los que los clientes quedan satisfechos y que exceden sus expectativas. Así esté buscando una compra en especial o desee comprar al mayoreo, puede contar con nosotros y nuestros productos, siempre con un servicio de calidad hasta el final. Revise el inventario y llámenos si requiere un producto en especial.</p>
+                <a href="#"><img src="img/wallpaper_section.jpg" alt=""></a>
+    
+            </section>
+            <section class="contactenos">
+                
+                <div class="formulario-contacto">
+                    <h2 id="titulos">Contáctenos</h2>
+                
+                    <div class="fondo-oscuro" id="fondo-oscuro"></div>
+    
+                    <form method="post">
+                        <label class="name">
+                            <input type="text" required placeholder=" ">
+                            <span class="label-name">Nombre *</span>
+                        
+                        </label>
+                        <label class="username contactenos">
+                            <input type="text" required placeholder=" ">
+                            <span class="label-name">Correo electrónico *</span>
+                        
+                        </label>
+                        <label class="contrasenia">
+                            <input type="text" required placeholder=" ">
+                            <span class="label-name">Asunto *</span>
+                        </label>
+                        <label class="messsage">
+                            <input type="text" required placeholder=" ">
+                            <span class="label-name mensaje">Mensaje *</span>
+                        </label>
+                        <input type="submit" value="Envíar" class="btn">
+                        
+                    </form>
+    
+    
+                </div>
+            </section>
+            <section class="nuestra-ubicación">
+                <h2 id="titulos">Nuestra ubicación</h2>
+                <div id="map"></div>
+    
+            </section>
+            <footer class="footer">
+                <div class="footer-container">
+                    <ul>
+                        <li><h3>Riobeta Diseños</h3></li>       
+                        <li><a href="#" class="email-footer">info@riobetadiseños.com</a></li>
+                        <ul class="footer-icons">
+                            <li><a href="https://www.instagram.com/riobetadis?igsh=MWVvemF0Y3U2cHE1" class="footer-icon instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/riobetadis?mibextid=ZbWKwLx" class="footer-icon facebook"><i class="fa-brands fa-facebook"></i></a></li> 
+                        </ul>
+                        <li>©2024 por Riobeta Diseños.</li>
+                        
+                    </ul>
+                </div>
+            </footer>
+    
+            <script src="main.js">
+                    
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>   
+        </div>
+       
+    </body>
+</html>

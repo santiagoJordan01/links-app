@@ -1,0 +1,488 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+p{
+    padding: 10px 300px;
+    margin: 20px 5px;
+}
+a{
+    text-decoration: none;
+    color:#000
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+
+
+.navigation-search-input .mobile,
+.icon-search .mobile{
+    display: none;
+}
+
+
+
+i.fa.fa-user{
+    
+    display: none;
+}
+.menu-btn{
+    cursor: pointer;
+    display: none;
+}
+
+.container{
+    background-color: #fafcf3;   
+}
+
+/* Navigation */
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fafcf3;
+
+}
+
+
+.nav-main ul.nav-menu-primary li a:hover,
+.nav-main ul.nav-menu-primary li:not(.nav-menu-right) > a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.nav-main ul.login li a:hover {
+    border-bottom: 2px solid #000;
+}
+.nav-main ul.login li{
+    padding: 5px;
+    align-self: center;
+
+}
+
+/* nav-brand */
+.nav-brand{
+    cursor: pointer;
+    width: 120px;
+    border-radius: 0%;
+    border: #fafcf3 solid 2px;
+    margin-left: 30px;
+    
+}
+
+
+/* Nav left */
+.nav-main ul{
+    display: flex;
+}
+.nav-main ul li{
+  padding: 10px;
+}
+.nav-main ul a{
+    padding: 2px;
+    margin-top: 100px;
+  }
+
+
+.nav-main .nav-menu-secondary{
+    display: none;
+}
+
+.nav-main ul.nav-menu-primary{
+    flex:1;
+}
+
+
+
+/* Nav Right */
+.nav-menu-right{
+    border: 1px solid #000;
+    background: #eee;
+    border-radius: 4px;
+}
+ul.nav-menu-right input:focus{
+    border:none;
+    outline: none;
+    
+}
+
+.borde-negro {
+    border: 2px solid #000;
+}
+
+.nav-main ul.nav-menu-right li.search-input input {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0;
+    background-color: #eee;
+    font-size: 18px;
+    height: 20px;
+}
+
+
+
+.nav-main ul.nav-menu-right li.icon-search{
+    align-self: center;
+    justify-self: center;
+    border-left: 0.5px solid #000;
+
+}
+
+
+
+
+
+/* Sign up login */
+
+
+/* header carrusel */
+header{ background: #fafcf3;
+
+}
+.header-carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    height: 80vh;
+    width: 100%;
+
+}
+
+
+#titulos {
+    display: flex;
+    font-size: 45px;
+    justify-content: center;
+    margin: 20px 10px;
+    padding: 5px 110px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.carrusel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carrusel-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carrusel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+
+.carrusel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-arrow {
+    position: absolute; /* Usa absolute para mantener la posición relativa al contenedor */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carrusel-prev {
+    left: 10px;
+}
+
+.carrusel-next {
+    right: 10px;
+}
+
+.carrusel-indicators {
+    position: absolute;
+    bottom: 20px;
+    top:95%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset 0 0 0 1px #fff;
+    -moz-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 0 1px #fff;
+    
+}
+
+
+.indicator.active {
+    background: #000;
+}
+
+/* section nuestra experiencia */
+.nuestra-experiencia img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* section contactenos */
+.formulario-contacto label{
+    display: grid;
+    grid-template-areas: "input";
+    margin: 20px;
+    justify-items:center ;
+}
+.formulario-contacto input{
+    display: grid;
+    grid-area: input;
+    padding: 16px 14px;
+    
+    width: 100%;
+    transition: .1s ease-in-out;
+    max-width: 800px;
+    border: 2px solid #e6e6e6;
+
+   
+}
+.formulario-contacto input:focus{
+    border-color:#888;
+    outline: none;
+}
+
+.formulario-contacto .label-name ,
+.formulario-contacto .label-password{
+    grid-area: input;
+
+    z-index: 100;
+    width: max-content;
+    align-self: center;
+    position: relative;
+    left: 27%;
+    padding: 0.1rem;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+    transform-origin: center left;
+    justify-self: start;
+    cursor: text;
+
+}
+
+.formulario-contacto input:focus + .label-name,
+.formulario-contacto input:not(:placeholder-shown) + .label-name{
+    transform: translateY(-65%) scale(.7);
+    background-color: #fff;
+    border-color: #555;
+    outline: none;
+}
+
+.formulario-contacto .btn {
+    background: #000;
+    color: #fff;
+    margin: 15px;
+    align-self: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+/* Location section*/
+#map {
+	height: 500px;
+	width: 100%;
+    
+}
+
+
+/* Footer */
+
+.footer-container{
+    display: 	grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+ul.footer-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.footer li{
+    padding: 5px 0px;
+    margin: 5px;
+
+}
+.footer{
+
+       
+        text-align: center;
+        font-size: 1rem;
+        padding-bottom: 20px;
+    
+}
+
+
+
+@media screen and (max-width:1410px){
+
+
+
+    .nav-main ul.login li.icon-user {
+        order: 1;
+        display: block;
+    }
+    .nav-main ul.nav-menu-right {
+        display: flex;
+        justify-content: flex-end;
+        order: 2;
+    }
+    .icon-user{
+        display: block;
+        
+   
+    }
+
+    i.fa.fa-user{
+        font-size: 25px;
+        display: block;
+    }
+
+
+    ul.login{
+        position: relative;
+        left: 30%;
+    }
+    
+    ul.login .ingresar, ul.login .crear-cuenta {
+        display:none};
+
+
+
+    }
+
+@media screen and (max-width:1130px){
+
+
+    .nav-main ul.nav-menu-right {
+        display: none;
+        justify-content: flex-end;
+        order: 2;
+    }
+
+
+    .nav-main ul.nav-menu-primary{    
+        display: block;
+        position: absolute;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #dadcd3;
+        opacity: 0.9;
+        height: 100%;
+        padding: 30px;
+        z-index: 100;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    ul.nav-menu-primary.show{
+        transform: translateX(-20px);
+    }
+    .nav-main ul.nav-menu-primary li{    
+        padding: 20px;    
+
+    }
+
+    .navigation-search-input .mobile,
+    .icon-search .mobile{
+        display: block;
+        margin: auto;
+    }
+    i.fas.fa-search{
+      
+        font-size: 25px;
+    }
+    .menu-btn{
+        margin: auto;
+        display: block;
+    }
+    i.fas.fa-bars{
+        font-size: 25px;
+    }
+    i.fa.fa-user{
+    
+        display: block;
+    }
+    ul.icon-search .mobile{
+        margin: auto;
+        padding: 10px;
+    }
+    ul.search-input.mobile input:focus{
+        border:none;
+        outline: none;
+        
+    }
+    .navigation-search-input ul.search-input.mobile input {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 0;
+        background-color: #eee;
+        font-size: 18px;
+        height: 60px;
+        width: 100%;
+       
+        transition: transform 1s ease-in-out;}
+
+
+
+    p{
+        padding: 10px 100px;
+
+    }
+    }
+
+
+
